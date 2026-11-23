@@ -20,7 +20,7 @@ class MaterialTests(unittest.TestCase):
                 self.assertTrue(all(None not in row for row in rows))
 
 
-EXPECTED = {'segments.csv': (['segment_id', 'trip_id', 'road_class', 'region', 'weather', 'sensor_config', 'start_km', 'end_km'], 35), 'labels.csv': (['label_id', 'segment_id', 'scenario', 'review_status', 'annotator_batch'], 30), 'fleet_windows.csv': (['window_id', 'vehicle_id', 'sensor_config', 'region', 'weather_window', 'available_from', 'available_to', 'permit_id'], 24), 'collection_tasks.csv': (['task_id', 'window_id', 'scenario', 'priority', 'status', 'accepted_at', 'receipt_id'], 19)}
+EXPECTED = {'segments.csv': (['segment_id', 'trip_id', 'road_class', 'region', 'visibility', 'sensor_config', 'start_km', 'end_km'], 35), 'labels.csv': (['label_id', 'segment_id', 'scenario', 'review_status', 'annotator_batch'], 30), 'fleet_windows.csv': (['window_id', 'vehicle_id', 'sensor_config', 'region', 'route_state', 'available_from', 'available_to', 'permit_id'], 24), 'collection_tasks.csv': (['task_id', 'window_id', 'scenario', 'priority', 'status', 'accepted_at', 'receipt_id'], 19)}
 
 
 if __name__ == "__main__":
