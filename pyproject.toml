@@ -4,10 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "road_scenario_collection_planning"
-version = "0.1.0"
-description = "本地合成车辆运营资料"
+version = "0.2.0"
+description = "道路场景缺口分析与车队采集排程（本地合成资料）"
 requires-python = ">=3.11,<3.15"
 dependencies = []
+
+[project.scripts]
+road-scenario = "road_scenario_collection_planning.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
